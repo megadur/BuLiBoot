@@ -77,6 +77,7 @@
     <Folder Include="BuLiApp\templates\" />
     <Folder Include="BuLiApp\templates\demo\" />
     <Folder Include="BuLiBoot\" />
+    <Folder Include="static\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap3\templates\bootstrap3\bootstrap3.html" />

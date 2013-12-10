@@ -1,4 +1,4 @@
-{% for message in messages %}
+﻿{% for message in messages %}
     <div class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %}" data-dismiss=alert>
         <button class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         {{ message|safe }}
