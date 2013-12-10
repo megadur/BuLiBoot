@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}BuLiTipp 2000{% endblock %}
+
+{% block content %}
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Bundesliga</a></li>
+  <li><a href="#">DFB-Pokal</a></li>
+  <li><a href="#">WM</a></li>
+</ul>
+<div class="row">
+    <div class="col-md-4">
+        {% include "messages.html" %}
+    </div>
+    <div class="col-md-4">
+        {% include "spieltag.html" %}
+    </div>
+    <div class="col-md-4">
+        {% include "bestenliste.html" %}
+    </div>
+</div>
+
+{% endblock %}
