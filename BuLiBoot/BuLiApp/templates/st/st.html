@@ -1,22 +1,23 @@
-{% extends 'base.html' %}
+﻿{% extends 'base.html' %}
 
-{% block title %}BuLiTipp 2000{% endblock %}
+{% block title %}BuLiTipp Spieltag 2000{% endblock %}
 
 {% block content %}
+
 <ul class="nav nav-tabs">
   <li class="active"><a href="#">Bundesliga</a></li>
   <li><a href="#">DFB-Pokal</a></li>
   <li><a href="#">WM</a></li>
 </ul>
+
 <div class="row">
-    <div class="col-md-4">
-        {% include "messages.html" %}
+    <div class="col-md-8">
+        <h2>Spieltag</h2>
+        {% include "st/st_buli.html" %}
     </div>
     <div class="col-md-4">
-        {% include "spieltag.html" %}
-    </div>
-    <div class="col-md-4">
-        {% include "bestenliste.html" %}
+        <h2>Bestenliste</h2>
+        {% include "bl/bl_buli.html" %}
     </div>
 </div>
 {% endblock %}

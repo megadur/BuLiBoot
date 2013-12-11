@@ -76,7 +76,11 @@
     <Folder Include="BuLiApp\" />
     <Folder Include="BuLiApp\templates\" />
     <Folder Include="BuLiApp\templates\demo\" />
+    <Folder Include="BuLiApp\templates\bl\" />
+    <Folder Include="BuLiApp\templates\news\" />
+    <Folder Include="BuLiApp\templates\st\" />
     <Folder Include="BuLiBoot\" />
+    <Folder Include="static\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap3\templates\bootstrap3\bootstrap3.html" />
@@ -84,6 +88,10 @@
     <Content Include="bootstrap3\templates\bootstrap3\pagination.html" />
     <Content Include="BuLiApp\templates\base.html" />
     <Content Include="BuLiApp\templates\bestenliste.html" />
+    <Content Include="BuLiApp\templates\bl\bestenliste.html" />
+    <Content Include="BuLiApp\templates\bl\bl_buli.html" />
+    <Content Include="BuLiApp\templates\bl\bl_dfb.html" />
+    <Content Include="BuLiApp\templates\bl\bl_wm.html" />
     <Content Include="BuLiApp\templates\bootstrap.html" />
     <Content Include="BuLiApp\templates\demo\base.html" />
     <Content Include="BuLiApp\templates\demo\bootstrap.html" />
@@ -92,7 +100,12 @@
     <Content Include="BuLiApp\templates\home.html" />
     <Content Include="BuLiApp\templates\index.html" />
     <Content Include="BuLiApp\templates\messages.html" />
+    <Content Include="BuLiApp\templates\news\news.html" />
     <Content Include="BuLiApp\templates\spieltag.html" />
+    <Content Include="BuLiApp\templates\st\st.html" />
+    <Content Include="BuLiApp\templates\st\st_buli.html" />
+    <Content Include="BuLiApp\templates\st\st_dfb.html" />
+    <Content Include="BuLiApp\templates\st\st_wm.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>

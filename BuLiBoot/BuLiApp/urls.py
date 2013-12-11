@@ -4,6 +4,8 @@ from __future__ import unicode_literals
 from django.conf.urls import patterns, url
 
 from .views import HomePageView
+from BuLiApp.views import BestenlisteView, SpieltagView, NewsView
+from django.views.generic.edit import FormView
 #, FormView, FormHorizontalView, FormInlineView, PaginationView
 
 # Uncomment the next two lines to enable the admin:
@@ -24,7 +26,11 @@ from .views import HomePageView
 
 urlpatterns = patterns('',
     url(r'^$', HomePageView.as_view(), name='home'),
-#    url(r'^form$', FormView.as_view(), name='form'),
+    url(r'^home$', HomePageView.as_view(), name='home'),
+    url(r'^bestenliste$', BestenlisteView.as_view(), name='bl'),
+    url(r'^spieltag$', SpieltagView.as_view(), name='st'),
+    url(r'^news$', NewsView.as_view(), name='news'),
+    url(r'^form$', FormView.as_view(), name='form'),
     #url(r'^form_horizontal$', FormHorizontalView.as_view(), name='form'),
     #url(r'^form_inline$', FormInlineView.as_view(), name='form'),
 #    url(r'^pagination$', PaginationView.as_view(), name='pagination'),
