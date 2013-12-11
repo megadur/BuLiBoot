@@ -1,22 +1,50 @@
-{% extends 'base.html' %}
+﻿{% extends 'base.html' %}
 
 {% block title %}BuLiTipp 2000{% endblock %}
 
 {% block content %}
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#">Bundesliga</a></li>
-  <li><a href="#">DFB-Pokal</a></li>
-  <li><a href="#">WM</a></li>
+   <li class="active"><a href="#home" data-toggle="tab">Bundesliga</a></li>
+   <li ><a href="#pokal" data-toggle="tab">DFB-Pokal</a></li>
+   <li ><a href="#wm" data-toggle="tab">WM</a></li>
 </ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="home">
 <div class="row">
-    <div class="col-md-4">
+            <div class="col-md-4 hidden-md">
         {% include "messages.html" %}
     </div>
-    <div class="col-md-4">
+            <div class="col-md-1 visible-md">
+                link
+            </div>
+            <div class="col-md-4 hidden-md">
         {% include "spieltag.html" %}
     </div>
-    <div class="col-md-4">
+            <div class="col-md-10 visible-md">
+                {% include "spieltag.html" %}
+            </div>
+            <div class="col-md-4 hidden-md">
         {% include "bestenliste.html" %}
     </div>
+            <div class="col-md-1 visible-md">
+                <!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="pokal">pokal</div>
+    <div class="tab-pane" id="wm">wm</div>
 </div>
 {% endblock %}
