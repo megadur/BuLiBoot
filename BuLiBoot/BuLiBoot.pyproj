@@ -45,6 +45,7 @@
     <Compile Include="bootstrap3\templatetags\__init__.py" />
     <Compile Include="bootstrap3\tests.py" />
     <Compile Include="bootstrap3\__init__.py" />
+    <Compile Include="BuLiApp\forms.py" />
     <Compile Include="BuLiApp\models.py" />
     <Compile Include="BuLiApp\tests.py" />
     <Compile Include="BuLiApp\urls.py" />
