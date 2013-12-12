@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}BuLiTipp BL 2000{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Bundesliga</h2>
+        {% include "bl/bl_buli.html" %}
+    </div>
+    <div class="col-md-4">
+        <h2>DFB-Pokal</h2>
+        {% include "bl/bl_dfb.html" %}
+    </div>
+    <div class="col-md-4">
+        <h2>WM</h2>
+        {% include "bl/bl_wm.html" %}
+    </div>
+</div>
+{% endblock %}
