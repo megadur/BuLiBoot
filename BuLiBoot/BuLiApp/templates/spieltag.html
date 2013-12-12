@@ -1,10 +1,20 @@
 ﻿{% load url from future %}
-<div class="dropdown">
-  <a id="dLabel" data-toggle="dropdown" href="#">Dropdown trigger</a>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-     <li class="list-group-item">Cras justo odio</li>
-  </ul>
-</div>
+    <ul class="nav nav-pills nav-justified">
+        <li><a href="#">Voriger</a></li>
+        <li class="dropdown">
+            <a id="drop5" role="button" data-toggle="dropdown" href="#">Spieltag 03 <b class="caret"></b></a>
+            <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 01</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 02</a></li>
+                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 03</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 04</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 05</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 06</a></li>
+          </ul>
+        </li>
+       <li><a href="#">Nächster</a></li>
+    </ul>
+
 <div class="table-responsive">
     <table class="table">
         <thead>
@@ -22,46 +32,12 @@
             <tr >
                 <td>Hamburg vs. Gera</td><td>1:1</td>
             </tr>
-  </table>
+            <tr >
+                <td>München vs. Hamburg</td><td>1:1</td>
+            </tr>
+            <tr >
+                <td>Cottbus vs. Magdeburg</td><td>1:1</td>
+            </tr>
+    </table>
 </div>
-  <ul class="nav nav-pills">
-         <li class="dropdown">
-          <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
-          <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-            <li role="presentation" class="divider"></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-          </ul>
-        </li>
-</ul>
 
-  <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-
-<div class="dropdown">
-  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-    Dropdown <span class="caret"></span>
-  </a>
-
-
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-  </ul>
-</div>

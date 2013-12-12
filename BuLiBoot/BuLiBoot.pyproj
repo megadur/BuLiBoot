@@ -45,6 +45,7 @@
     <Compile Include="bootstrap3\templatetags\__init__.py" />
     <Compile Include="bootstrap3\tests.py" />
     <Compile Include="bootstrap3\__init__.py" />
+    <Compile Include="BuLiApp\forms.py" />
     <Compile Include="BuLiApp\models.py" />
     <Compile Include="BuLiApp\tests.py" />
     <Compile Include="BuLiApp\urls.py" />
@@ -77,6 +78,7 @@
     <Folder Include="BuLiApp\templates\" />
     <Folder Include="BuLiApp\templates\demo\" />
     <Folder Include="BuLiApp\templates\bl\" />
+    <Folder Include="BuLiApp\templates\user\" />
     <Folder Include="BuLiApp\templates\news\" />
     <Folder Include="BuLiApp\templates\st\" />
     <Folder Include="BuLiBoot\" />
@@ -95,9 +97,13 @@
     <Content Include="BuLiApp\templates\bootstrap.html" />
     <Content Include="BuLiApp\templates\demo\base.html" />
     <Content Include="BuLiApp\templates\demo\bootstrap.html" />
+    <Content Include="BuLiApp\templates\demo\form.html" />
+    <Content Include="BuLiApp\templates\demo\form_horizontal.html" />
+    <Content Include="BuLiApp\templates\demo\form_inline.html" />
     <Content Include="BuLiApp\templates\demo\home.html" />
     <Content Include="BuLiApp\templates\demo\index.html" />
     <Content Include="BuLiApp\templates\home.html" />
+    <Content Include="BuLiApp\templates\impress.html" />
     <Content Include="BuLiApp\templates\index.html" />
     <Content Include="BuLiApp\templates\messages.html" />
     <Content Include="BuLiApp\templates\news\news.html" />
@@ -106,6 +112,9 @@
     <Content Include="BuLiApp\templates\st\st_buli.html" />
     <Content Include="BuLiApp\templates\st\st_dfb.html" />
     <Content Include="BuLiApp\templates\st\st_wm.html" />
+    <Content Include="BuLiApp\templates\user\data.html" />
+    <Content Include="BuLiApp\templates\user\password.html" />
+    <Content Include="BuLiApp\templates\user\user.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
