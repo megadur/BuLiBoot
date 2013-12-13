@@ -163,3 +163,8 @@ local_settings.py
 .idea*
 *.egg-info
 dist
+
+# PyDev / Eclipse settings/confifuration files
+/.pydevproject
+/.project
+/.settings
