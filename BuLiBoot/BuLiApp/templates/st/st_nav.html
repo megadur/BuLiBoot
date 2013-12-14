@@ -1,0 +1,31 @@
+﻿{% load url from future %}
+
+<form id="form_v" action="" method="get">
+    {% csrf_token %}
+    <input type="hidden" name="spieltag" value="{{spieltag|add:"-1"}}" />
+</form>
+
+<form id="form_n" action="" method="get">
+    {% csrf_token %}
+    <input type="hidden" name="spieltag" value="{{spieltag|add:"1"}}" />
+</form>
+
+<ul class="nav nav-pills nav-justified">
+    <li>
+        <a href="javascript:{}" onclick="document.getElementById('form_v').submit(); return false;">Voriger</a>
+    </li>
+    <li class="dropdown">
+        <a id="drop5" class="dropdown-toggle" data-toggle="dropdown" href="#">Spieltag {{spieltag}} <b class="caret"></b></a><!-- role="button"   -->
+        <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 01</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 02</a></li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 03</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 04</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 05</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 06</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="javascript:{}" onclick="document.getElementById('form_n').submit(); return false;">Nächster</a>
+    </li>
+</ul>

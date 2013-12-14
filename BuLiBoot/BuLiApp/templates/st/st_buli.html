@@ -1,19 +1,7 @@
 ﻿{% load url from future %}
-    <ul class="nav nav-pills nav-justified">
-        <li><a href="#">Voriger</a></li>
-        <li class="dropdown">
-            <a id="drop5" role="button" data-toggle="dropdown" href="#">Spieltag 03 <b class="caret"></b></a>
-            <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 01</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 02</a></li>
-                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 03</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 04</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 05</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Spieltag 06</a></li>
-          </ul>
-        </li>
-       <li><a href="#">Nächster</a></li>
-    </ul>
+
+   {% include "st/st_nav.html" %}
+
 <div class="center-block">
 </div>
 <div class="table-responsive">

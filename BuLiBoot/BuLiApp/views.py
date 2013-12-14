@@ -9,14 +9,25 @@ from django.contrib import messages
 from .forms import ContactForm
 from BuLiApp.forms import UserForm
 
+class Util():
+    def universal_get(self, view, request, *args, **kwargs):
+        context = view.get_context_data(**kwargs)
+        if("spieltag" in request.GET.keys()):
+            spieltag = int(request.GET["spieltag"])
+        else:
+            spieltag=3
+        context["spieltag"]=spieltag
+        return view.render_to_response(context)
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
 
     def get_context_data(self, **kwargs):
         context = super(HomePageView, self).get_context_data(**kwargs)
-        messages.info(self.request, 'This is a demo of a message.')
+        messages.info(self.request, 'This is a demo of a message. You are on the home screen.')
         return context
+    def get(self, request, *args, **kwargs):
+        return Util().universal_get(self, request)
 
 class BestenlisteView(TemplateView):
     template_name = 'bl/bestenliste.html'
@@ -31,8 +42,10 @@ class SpieltagView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(SpieltagView, self).get_context_data(**kwargs)
-        messages.info(self.request, 'This is a demo of a message.')
         return context
+    def get(self, request, *args, **kwargs):
+        messages.success(self.request, 'Erfolgreich gespeichert!')
+        return Util().universal_get(self, request)
 
 class NewsView(TemplateView):
     template_name = 'news/news.html'
