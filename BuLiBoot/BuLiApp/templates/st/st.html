@@ -31,7 +31,7 @@
                 <div class="col-md-6">
                     {% include "st/st_dfb.html" %}
                 </div>
-                <div class="col-md-2" id="andereTable" style="overflow: hidden;">
+                <div class="col-md-2" id="andereTable" style="overflow: hidden; padding-top:55px;" onmouseout="pid=setInterval(move, 100);" onmouseover="clearInterval(pid);">
                         {% include "st/andere.html" %}
                 </div>
                 <script>
@@ -52,7 +52,7 @@
                             reverse= !reverse
                         }
                     }
-                    setInterval(move, 100);
+                    pid=setInterval(move, 100);
                     
                 </script>
             {% else %}
