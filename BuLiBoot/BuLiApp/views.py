@@ -103,3 +103,13 @@ class PaginationView(TemplateView):
             show_lines = paginator.page(paginator.num_pages)
         context['lines'] = show_lines
         return context
+
+class TestPageView(TemplateView):
+    template_name = 'test.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(TestPageView, self).get_context_data(**kwargs)
+        messages.info(self.request, 'This is a demo of a message. You are on the home screen.')
+        return context
+    def get(self, request, *args, **kwargs):
+        return Util().universal_get(self, request)

@@ -75,6 +75,12 @@
     <Folder Include="bootstrap3\templates\bootstrap3\" />
     <Folder Include="bootstrap3\templatetags\" />
     <Folder Include="BuLiApp\" />
+    <Folder Include="BuLiApp\static\" />
+    <Folder Include="BuLiApp\static\bootstrap-3.0.2-dist\" />
+    <Folder Include="BuLiApp\static\dist\" />
+    <Folder Include="BuLiApp\static\dist\css\" />
+    <Folder Include="BuLiApp\static\dist\fonts\" />
+    <Folder Include="BuLiApp\static\dist\js\" />
     <Folder Include="BuLiApp\templates\" />
     <Folder Include="BuLiApp\templates\demo\" />
     <Folder Include="BuLiApp\templates\bl\" />
@@ -88,6 +94,18 @@
     <Content Include="bootstrap3\templates\bootstrap3\bootstrap3.html" />
     <Content Include="bootstrap3\templates\bootstrap3\messages.html" />
     <Content Include="bootstrap3\templates\bootstrap3\pagination.html" />
+    <Content Include="BuLiApp\static\custom.css" />
+    <Content Include="BuLiApp\static\dist\css\bootstrap-theme.css" />
+    <Content Include="BuLiApp\static\dist\css\bootstrap-theme.min.css" />
+    <Content Include="BuLiApp\static\dist\css\bootstrap.css" />
+    <Content Include="BuLiApp\static\dist\css\bootstrap.min.css" />
+    <Content Include="BuLiApp\static\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="BuLiApp\static\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="BuLiApp\static\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="BuLiApp\static\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BuLiApp\static\dist\js\bootstrap.js" />
+    <Content Include="BuLiApp\static\dist\js\bootstrap.min.js" />
+    <Content Include="BuLiApp\static\jquery-1.10.2.js" />
     <Content Include="BuLiApp\templates\base.html" />
     <Content Include="BuLiApp\templates\bestenliste.html" />
     <Content Include="BuLiApp\templates\bl\bestenliste.html" />
@@ -108,13 +126,19 @@
     <Content Include="BuLiApp\templates\messages.html" />
     <Content Include="BuLiApp\templates\news\news.html" />
     <Content Include="BuLiApp\templates\spieltag.html" />
+    <Content Include="BuLiApp\templates\st\andere.html" />
     <Content Include="BuLiApp\templates\st\st.html" />
+    <Content Include="BuLiApp\templates\st\st_abgelaufen.html" />
     <Content Include="BuLiApp\templates\st\st_buli.html" />
     <Content Include="BuLiApp\templates\st\st_dfb.html" />
+    <Content Include="BuLiApp\templates\st\st_nav.html" />
     <Content Include="BuLiApp\templates\st\st_wm.html" />
+    <Content Include="BuLiApp\templates\st\st_zukunft.html" />
+    <Content Include="BuLiApp\templates\test.html" />
     <Content Include="BuLiApp\templates\user\data.html" />
     <Content Include="BuLiApp\templates\user\password.html" />
     <Content Include="BuLiApp\templates\user\user.html" />
+    <Content Include="readme.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
